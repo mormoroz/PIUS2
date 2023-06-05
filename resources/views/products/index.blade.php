@@ -35,6 +35,9 @@
                 @endunless
             </div>
         </div>
+        <div class="modal-body">
+            <p class="h3">{{ $products->onEachSide(5)->links() }}</p>
+        </div>
 {{--        <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">--}}
 {{--            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">--}}
 {{--                <div class="modal-content">--}}
@@ -67,8 +70,6 @@
 {{--                </div>--}}
 {{--            </div>--}}
 {{--        </div>--}}
-    </div>
-
     </div>
 {{--    <img class="card-img-top" src="{{ Vite::asset('resources/icons/iPhone-9.png') }}">--}}
     @vite(['resources/js/products.index.js'])

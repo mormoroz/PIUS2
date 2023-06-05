@@ -1,7 +1,9 @@
 <?php
 
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +22,6 @@ Route::get('/', function () {
 Route::get('/products', [ProductController::class, 'index']);
 
 
-Route::get('/category', function() {
-    return view('category');
-});
+Route::get('/category', [CategoryController::class, 'index']);
+
+Route::get('/category/{code?}', [ProductController::class, 'codeCategory']);
