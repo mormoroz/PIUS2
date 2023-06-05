@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<head>@vite(['resources/js/color-modes.js', 'resources/css/bootstrap.min.css'])></script>
+<head>@vite(['resources/js/color-modes.js', 'resources/css/bootstrap.min.css', 'resources/css/app.css'])></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

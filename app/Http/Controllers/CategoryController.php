@@ -16,10 +16,4 @@ class CategoryController extends Controller
         ]);
     }
 
-    public function codeCategory($code)
-    {
-        return view('products.index', [
-            'products' => Category::latest()->filter(request(['search']))->get()
-        ]);
-    }
 }

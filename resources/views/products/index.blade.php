@@ -3,10 +3,10 @@
 @section('content')
     <div class="main">
         <div class="container">
-            <form class="d-flex" action="/products">
-                <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary" type="submit">Search</button>
-            </form>
+{{--            <form class="d-flex" action="/products">--}}
+{{--                <input class="form-control me-2" type="search" name="search" placeholder="Search" aria-label="Search">--}}
+{{--                <button class="btn btn-primary" type="submit">Search</button>--}}
+{{--            </form>--}}
             <x-flash-message />
             <div class="row my-5" name="products_index">
                 @unless(count($products) == 0)
