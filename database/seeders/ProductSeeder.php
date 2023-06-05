@@ -23,7 +23,8 @@ class ProductSeeder extends Seeder
                 'description' => (''),
                 'price' => BigInteger::randomRange(100, 100000),
                 'image' => '',
-                'count' => BigInteger::randomRange(0, 1000)
+                'count' => BigInteger::randomRange(0, 1000),
+                'category_id' => BigInteger::randomRange(101, 200)
             ]);
         }
         echo 'Successfully loaded 100 new records';

@@ -19,7 +19,7 @@ class CategorySeeder extends Seeder
                 'category_name' => Str::random(12),
                 'code' => Str::random(4),
                 'active' => BigInteger::randomRange(0, 1),
-                'product_id' => BigInteger::randomRange(0, 100),
+                'parent_category' => Str::random(12),
             ]);
         }
         echo 'Successfully loaded 100 new records';
